@@ -1,7 +1,9 @@
 # Microsoft365_devicePhish
 Abusing Microsoft 365 OAuth Authorization Flow for Phishing Attack
 
-This is a simple proof-of-concept script that allows an attacker to conduct a phishing attack against Microsoft 365 OAuth Authorization Flow. Using this, one can connect to Microsoft's OAuth API endpoints to create `user_code` and `device_code` and obtain victim user's `access_token` upon successfult phishing attack. Then, the token can be used to access various Office365 products via Microsoft Graph API on behalf of the victim user. In addition, this script was created to help a specific situation where a target organization was utilizaing an Email OTP (One-time Passcode) for their MFA option; thus, with a successful phishing attack, one could read a generated Email OTP code from victim user's email inbox to bypass MFA. More details about this phishing attack and scenario can be found on the following [Blog]() post.
+This is a simple proof-of-concept script that allows an attacker to conduct a phishing attack against Microsoft 365 OAuth Authorization Flow. Using this, one can connect to Microsoft's OAuth API endpoints to create `user_code` and `device_code` and obtain victim user's `access_token` upon successfult phishing attack. Then, the token can be used to access various Office365 products via Microsoft Graph API on behalf of the victim user. In addition, this script was created to help a specific situation where a target organization was utilizaing an Email OTP (One-time Passcode) for their MFA option; thus, with a successful phishing attack, one could read a generated Email OTP code from victim user's email inbox to bypass MFA. 
+
+More details about this phishing attack and scenario can be found on the following [Blog post]().
 
 ## Usage
 ```
